@@ -11,6 +11,15 @@ li {
   font-size: 20px;
   font-weight: 500;
 }
+h1 {
+  margin: 0;
+}
+#first {
+  color: #fea301;
+}
+#second {
+  color: #01acfd;
+}
 /* common style end */
 
 /* navbar start */
@@ -30,9 +39,7 @@ ul {
 #nav-btn {
   border: none;
   color: white;
-  width: 197px;
-  padding: 10px;
-
+  padding: 10px 60px;
   border-radius: 12px;
   background: #fea301;
   font-size: 20px;
@@ -52,6 +59,33 @@ ul {
   color: #5d58ef;
 }
 /* navbar end */
+
+/* banner section start */
+.banner-section {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-heading {
+  font-size: 56px;
+  font-weight: 700;
+}
+.banner-p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner-btn {
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 12px;
+  background: #111;
+  padding: 10px 47px;
+}
+/* banner section end */
+
 /* media query start */
 @media screen and (max-width: 576px) {
   .nav-list {
@@ -63,9 +97,38 @@ ul {
   #hamburger {
     margin-left: 200px;
   }
+
+  /* banner start */
+  .banner-section {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    width: 336px;
+    height: 413px;
+  }
+  .banner-heading{
+    width: 357px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .banner-p > br{
+    display: none;
+  }
+  .banner-p{
+    width: 357px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner-btn{
+    font-size: 16px;
+    margin-left: 32%;
+    padding: 6px 24px;
+    line-height: 30px;
+  }
+  /* banner end */
 }
 @media screen and (min-width: 992px) {
-  #hamburger{
+  #hamburger {
     display: none;
   }
 }
