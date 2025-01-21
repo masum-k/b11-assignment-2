@@ -1,8 +1,5 @@
 /* common style start */
-body {
-  margin-left: 140px;
-  margin-right: 140px;
-}
+
 .font {
   font-family: "Quicksand", serif;
   font-style: normal;
@@ -86,6 +83,70 @@ ul {
 }
 /* banner section end */
 
+/* curriculum section start */
+.curriculum-container {
+  background-image: url(/assets/bg.png);
+  text-align: center;
+}
+.h2-heading {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  font-size: 46px;
+  font-weight: 700;
+}
+.curriculum-section {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  padding: 50px 20px 0;
+  border-radius: 18px;
+}
+.curriculum-card {
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.first {
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  border: 1px solid #def5ff;
+}
+.second {
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  border: 1px solid #fff4dc;
+}
+third {
+  border: 1px solid #f2e8ff;
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+.class-btn {
+  background: none;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+}
+.btn-1 {
+  color: #64c8ff;
+}
+.btn-2 {
+  color: #F0AA00;
+}
+.btn-3 {
+  color: #8700FF;
+}
+.card-p {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+/* curriculum section end */
+
 /* media query start */
 @media screen and (max-width: 576px) {
   .nav-list {
@@ -101,31 +162,38 @@ ul {
   /* banner start */
   .banner-section {
     flex-direction: column-reverse;
+    gap: 20px;
   }
   .banner-img {
     width: 336px;
     height: 413px;
   }
-  .banner-heading{
+  .banner-heading {
     width: 357px;
     font-size: 32px;
     text-align: center;
   }
-  .banner-p > br{
+  .banner-p > br {
     display: none;
   }
-  .banner-p{
+  .banner-p {
     width: 357px;
     font-size: 14px;
     text-align: center;
   }
-  .banner-btn{
+  .banner-btn {
     font-size: 16px;
     margin-left: 32%;
     padding: 6px 24px;
     line-height: 30px;
   }
   /* banner end */
+
+  /* curriculum start */
+  .curriculum-section{
+    flex-direction: column;
+  }
+  /* curriculum end */
 }
 @media screen and (min-width: 992px) {
   #hamburger {
