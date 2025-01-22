@@ -89,8 +89,8 @@ ul {
   text-align: center;
 }
 .h2-heading {
+  text-align: center;
   margin-top: 60px;
-  margin-bottom: 80px;
   font-size: 46px;
   font-weight: 700;
 }
@@ -100,10 +100,9 @@ ul {
   gap: 28px;
 }
 .card {
-  width: 300px;
-  height: 400px;
   padding: 50px 20px 0;
   border-radius: 18px;
+  height: 400px;
 }
 .curriculum-card {
   box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
@@ -119,9 +118,9 @@ ul {
   border: 1px solid #fff4dc;
 }
 third {
-  border: 1px solid #f2e8ff;
   background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
     #fff;
+  border: 1px solid #f2e8ff;
 }
 .class-btn {
   background: none;
@@ -133,10 +132,10 @@ third {
   color: #64c8ff;
 }
 .btn-2 {
-  color: #F0AA00;
+  color: #f0aa00;
 }
 .btn-3 {
-  color: #8700FF;
+  color: #8700ff;
 }
 .card-p {
   color: #808080;
@@ -190,14 +189,40 @@ third {
   /* banner end */
 
   /* curriculum start */
-  .curriculum-section{
+  .curriculum-section {
     flex-direction: column;
+  }
+  .h2-heading {
+    font-size: 26px;
+    font-weight: 700;
   }
   /* curriculum end */
 }
 @media screen and (min-width: 992px) {
   #hamburger {
     display: none;
+  }
+  .card {
+    width: 300px;
+  }
+  .h2-heading {
+    margin-bottom: 80px;
+  }
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 80px 0 60px 0;
+  }
+  .left-arrow, .right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background: #fea301;
   }
 }
 /* media query end */
