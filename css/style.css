@@ -8,7 +8,8 @@ li {
   font-size: 20px;
   font-weight: 500;
 }
-h1 {
+h1,
+h3 {
   margin: 0;
 }
 #first {
@@ -16,6 +17,12 @@ h1 {
 }
 #second {
   color: #01acfd;
+}
+.ml{
+  margin-left: 38px;
+}
+.small-card-h3{
+  padding: 24px 38px 28px 38px;
 }
 /* common style end */
 
@@ -146,6 +153,79 @@ third {
 }
 /* curriculum section end */
 
+/* stories section start */
+.stories-section {
+  background-image: url(/assets/bg.png),
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+}
+.stories-container {
+  display: flex;
+  justify-content: center;
+}
+.stories-card-title-big {
+  width: 540px;
+  border-radius: 0 0 16px 16px;
+  background: #fff;
+}
+.stories-card-title-small {
+  width: 290px;
+  border-radius: 0 0 16px 16px;
+  padding: 0;
+  background: #fff;
+}
+.story-img,.small-story-img {
+  border-radius: 16px 16px 0px 0px;
+  display: block;
+}
+.stories-card-p{
+  width: 433px;
+  padding-bottom: 38px;
+}
+.card-title{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.small-card-1{
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 18px;
+  gap: 15px;
+}
+.small-card-2{
+  display: flex;
+  margin-left: 18px;
+  gap: 15px;
+}
+.big-card {
+  position: relative;
+}
+.date-btn {
+  padding: 14px 18px 15px 19px;
+  border-radius: 47px;
+  background: #3cd8e8;
+  position: absolute;
+  bottom: 38%;
+  border: none;
+  color: white;
+}
+.date-btn-1{
+  padding: 9px 18px 10px 19px;
+  border-radius: 47px;
+  background: #95B226;
+  position: absolute;
+  bottom: 30%;
+  border: none;
+  color: white;
+}
+.btn-pos{
+  position: relative;
+}
+/* stories section end */
+
 /* media query start */
 @media screen and (max-width: 576px) {
   .nav-list {
@@ -197,6 +277,12 @@ third {
     font-weight: 700;
   }
   /* curriculum end */
+
+  /* stories section start */
+  .big-card{
+    display: none;
+  }
+  /* stories section end */
 }
 @media screen and (min-width: 992px) {
   #hamburger {
@@ -215,7 +301,8 @@ third {
     gap: 5px;
     margin: 80px 0 60px 0;
   }
-  .left-arrow, .right-arrow {
+  .left-arrow,
+  .right-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
